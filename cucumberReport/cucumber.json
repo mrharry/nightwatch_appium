@@ -1,0 +1,131 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "",
+    "line": 1,
+    "id": "",
+    "tags": [],
+    "uri": "features/menu.feature",
+    "elements": [
+      {
+        "id": ";the-number-of-items-in-a-list",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "The number of items in a list",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "I have opened the Sports page",
+            "match": {
+              "location": "features/step_definitions/steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8690
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I click on the More button",
+            "match": {
+              "location": "features/step_definitions/steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 54
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I will see 19 sports",
+            "match": {
+              "location": "features/step_definitions/steps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34
+            }
+          }
+        ]
+      },
+      {
+        "id": ";the-content-of-a-list",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "The content of a list",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I have opened the Sports page",
+            "match": {
+              "location": "features/step_definitions/steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1798
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I click on the More button",
+            "match": {
+              "location": "features/step_definitions/steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Premier League"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Scottish Prem"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Championship"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I will see these sports",
+            "match": {
+              "location": "features/step_definitions/steps.js:28"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 695,
+              "error_message": "Testing the element <.gs-o-list-ui> with the attribute \"button\" has \"Premier League,Scottish Prem,Championship\" items. - Expected \"Premier League,Scottish Prem,Championship\" but got: \"Premier League,Scottish Prem,Championship,League One,League Two,Scottish Champ,Scottish League One,Scottish League Two,Champions League,Europa League,FA Cup,The FA Women's Cup,Women's Super Lge 1,Scottish Cup,Scottish League Cup,Women's Champs Lge,Women's World Cup Q,Int Friendlies,Close Filter Menu\"\n\n    at World.<anonymous> (/Users/stuart1/nightwatch-appium/features/step_definitions/steps.js:31:21)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

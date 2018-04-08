@@ -1,0 +1,21 @@
+{
+  "name": "nightwatch_cucumber_appium",
+  "version": "1.0.0",
+  "description": "test framework for nightwatch",
+  "main": "index.js",
+  "scripts": {
+    "e2e-test": "nightwatch",
+    "e2e-report": "node create-html-report.js"
+  },
+  "author": "stu",
+  "license": "ISC",
+  "devDependencies": {
+    "cucumber": "^3.0.1",
+    "cucumber-html-reporter": "^3.0.4",
+    "nightwatch": "^0.9.20",
+    "nightwatch-cucumber": "^8.0.10"
+  },
+  "dependencies": {
+    "appium-xcuitest-driver": "^2.74.0"
+  }
+}
